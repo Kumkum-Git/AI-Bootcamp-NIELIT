@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <CENTER> <H1>NESTED IF</H1></CENTER>
+    <h3>Question 1</h3> 
+ <script>
+document.write("age entered is",'<BR>')
+    age = 19
+     if  
+     (age<18)
+     {document.write("minor<18",'<br>');
+     }
+ else if (age> 60)
+ document.write("Senior Citizen>60",'<br>');
+ else 
+ {document.write("major<18",'<br>');
+ }
+  </script>  
+  <h3>Question 2</h3>
+  <script>
+document.write("Shopping discount criteria:",'<br>',"shopping>2000 , 10% OFF",'<BR>',"shopping>5000, 30% OFF",'<BR>',"shopping>10000; 70% OFF(Payment mode: credit card)",'<br>',"shopping=10000; 50% OFF(Payment mode: Cash)")
+  amt=4000
+mode= "cash"
+a=70
+b=50
+c=30
+d=10
+  if(amt>10000){  if(  mode== "credit card")
+{ 
+  document.write('discount is ',a," % <br>")
+  dis=amt*a/100
+  document.write('discount amount is ',dis," Rs <br>")
+  pay=amt-dis
+  document.write('payable amount is ',pay," Rs <br>")
+}
+  else if (amt>10000) if(  mode== "cash") 
+{ 
+  document.write('discount is ',b," % <br>")
+ 
+  dis=amt*b/100
+  document.write('discount amount is ',dis," Rs <br>")
+  pay=amt-dis
+  document.write('payable amount is ',pay," Rs <br>")
+  
+}}
+else if (amt>5000) 
+{
+  document.write('discount is ',c," % <br>")
+  dis=amt*c/100
+  document.write('discount amount is ',dis," Rs <br>")
+  pay=amt-dis
+  document.write('payable amount is ',pay," Rs <br>")
+}
+else if(amt>2000)
+{
+  document.write('discount is ',d," % <br>")
+  dis=amt*d/100
+  document.write('discount amount is ',dis," Rs <br>")
+  pay=amt-dis
+  document.write('payable amount is ',pay," Rs <br>")
+}
+
+  
+  </script>
+   <h3>Question 3</h3>
+   <script>
+    a=5000
+    b=10000
+    c=2000
+    document.write('FIND GREATEST AMONG THREE ?','<BR>',a,',',b,' ','and',' ', c,"<br>")
+    if (a>b && a>c) {
+        document.write(a, ' is greatest')
+    }
+    else if(b>a && b>c){
+        document.write(b, ' is greatest')
+    }
+    else{
+        document.write(c, ' is greatest')
+    }
+</script>           
+   <script>
+     
+   </script>
+ <h3>Question 4</h3>
+
+  <script>
+ marks= 180
+ if (marks<100)
+ document.write("FAIL",'<br>');
+else if (marks>250)
+document.write("A",'<br>');
+else if (marks>175)
+document.write("B",'<br>')
+    else if (marks>145)
+    document.write("C",'<br>')
+  </script>
+  <h3>Question 5</h3>
+  <script>
+    p="TRIANGLE"
+    q="CIRCLE"
+    r="RECTANLE"
+    s="SQUARE"
+    t="PENTAGON"
+    z="PENTAGON"
+    document.write("selected shape is=",z,'<br>')
+if (z==p){
+b=3
+h=4
+m=b*h*1/2
+  document.write("area of given triangle is=",m,"cm",'<br>')
+
+}
+else if(z==r)
+{l=3
+w=4
+m=l*w
+  document.write("area of given rectangle is=",m,"cm",'<br>')
+  
+}
+else if(z==s)
+{s=3
+m=s*s
+  document.write("area of given square is=",m,"cm",'<br>')
+
+}
+else if(z==t)
+{n=5
+s=4
+a=8
+m=n*s*a*1/2
+  document.write("area of given Pentagon is=",m,"cm",'<br>')
+
+}
+else if(z==q)
+{
+r=25
+m=3.14*r*r
+document.write("area of given circle is=",m,"cm",'<br>')
+}
+  </script>
+  <h3>Question 6</h3>
+  <script>
+    var a= 2026
+    if (a%4==0)
+  {
+    document.write("leap year")
+  }
+  else{
+    document.write("not leap year")
+  }
+  </script>
+  <h3>Week days</h3>
+<script>
+  
+var day=5
+document.write("day=",day,'<br>');
+ {
+if (day==1)
+document.write("Monday");
+else if (day==2)
+document.write("Tuesday");
+else if (day==3)
+document.write("Wednesday");
+else if (day==4)
+document.write("Thursday");
+else if (day==5)
+document.write("Friday");
+else if (day==6)
+document.write("Saturday");
+else if (day==7)
+document.write("Sunday");
+else{ 
+document.write("Invalid No.");
+}}
+</script>
+
+    
+   
+
+</body>
+</html>
